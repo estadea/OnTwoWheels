@@ -1,0 +1,339 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ body{
+    font-family: 'Roboto', sans-serif;
+
+ }
+
+ .header{
+    padding:30px;
+    margin:0;
+ }
+
+.navbar{
+    
+    display:flex;
+    align-items:center;
+    padding:20px;
+}
+
+nav{
+  
+    flex:1;
+    text-align:right;
+
+}
+
+nav ul{
+    display:inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a{ /** ? */
+    text-decoration: none;
+    color:#555;
+}
+
+p{ /** ? */
+    color:#555;
+}
+
+.container{
+    
+    max-width: 1300px;
+    margin:auto;
+    padding-left:25px;
+    padding-right:25px;
+
+}
+
+.row{
+    display: flex; /* ?*/
+    align-items: center; /* puts text in the middle*/
+    flex-wrap: wrap; /* ?*/
+    justify-content: space-around; /* ?*/
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none; /* dont show this icon when screen is big */
+
+}
+.small-container{
+    max-width: 1080px;
+    margin:auto; /* center*/
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-2{
+    flex-basis: 50%; /* both columns will occupy 50% of the space*/
+    min-width: 300px;
+}
+
+.col-2 img{
+    max-width: 100%; /* 100% of column*/
+    padding: 50px 0; /* 50px top and bottom, 0 right left */
+
+}
+
+h2{
+    font-size:30px;
+    line-height: 60px;
+    margin: 25px 0;
+    text-align: center;
+    
+}
+
+h4{
+    font-weight: bold;
+}
+
+.col-4{
+    flex-basis:25%; /* we have 4 pictures each taking up to 25% of space*/
+    padding: 10px;
+    min-width:200px;
+    margin-bottom: 50px;
+    transition: 0.5s; /* hover effect*/
+}
+
+.col-4 img{
+    width: 100%;
+}
+
+
+
+
+/* offer */ 
+.offer{
+    /* background: radial-gradient(#fff,rgb(139, 137, 137)); */
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-2 .offer-img{
+    padding: 50px; /* img size reduced */
+
+}
+
+/** offer2 */
+.offer2{
+    margin-top: 80px;
+    text-align: center;
+}
+
+/** automated slide */ 
+.slider{
+    padding:0;
+    border: 10px solid black;
+    filter: grayscale(100%);  
+}
+
+/** overlay */ 
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+  #text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+  .btn{
+    font-family: Roboto;
+    display: inline-block; /* ? */
+    font-weight: bold;
+    font: roboto;
+    background: #487ee2;
+    color:white;
+    padding: 8px 30px;  /* 8px top and bottom, 30px left and right: orange field */
+    margin: 30px 0;
+    border-radius: 30px; /* rounding it */
+    border-color: black;
+    transition: 0.5s;
+    cursor:pointer;
+    font-size: 18px;
+}
+
+
+/* scroll up button*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #487ee2 ; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    border: 3px solid black;
+  }
+  
+  #myBtn:hover {
+    background-color: #333; /* Add a dark-grey background on hover */
+  }
+
+  
+  /* footer */
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p{
+    color:#8a8a8a;
+}
+
+.footer h3{
+    color:#fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1{
+    flex-basis:30%;
+}
+.footer-col-2{
+    flex:1; /* will use all the available space */
+    text-align: center;
+}
+
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none; /* no bullet points in list */
+}
+ .app-logo{
+     margin-top: 20px;
+
+ }
+ .app-logo img{
+     width:140px;
+ }
+
+ .footer hr{
+     border: none;
+     background: #b5b5b5;
+     height:1px;
+     margin: 20px 0;
+ }
+
+ .copyright{
+     text-align: center;
+ }
+
+
+ #MenuItems{
+    max-height: 0px;
+
+}
+
+ /** media query for menu **/
+
+ @media only screen and (max-width: 800px){
+    nav ul{
+        position:absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden; /* to hide menu text if its not clicked */
+        transition: max-height 0.5s;
+    }
+
+    nav ul li{
+        display: block; /* to show menu vertically */
+        margin-right: 50px;
+        margin-bottom: 10px;
+        margin-top:10px;
+    }
+
+    nav ul li a{
+        color: #fff; /* home product about ... are anchor tags */ 
+    }
+
+    .menu-icon{ /*show icon when screen is small */
+       display: block;
+       cursor: pointer;
+    }
+    #MenuItems{
+        margin-top:50px;
+        max-height: 0px;
+        z-index:1;
+   
+    }
+    #MenuItems.open{
+        max-height: 200px;
+        z-index:1;
+        margin-top:50px;
+    }
+}
+
+
+
+
+
+ /* --- media query for less than 600 screen size ----- */
+
+ @media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%; /* every columns take 100% of width */
+    }
+    .single-product .row{
+       text-align: left;
+    }
+    .single-product .col-2{
+        padding:20px 0;
+    }
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .cart-info p{
+        display:none; /** hides title of cart items on smaller screens */
+    }
+}

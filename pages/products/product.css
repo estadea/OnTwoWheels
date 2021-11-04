@@ -1,0 +1,7 @@
+.product_container{
+    /* width: 100%; */
+    height: 100%;
+}
+.product_box{
+    border:1px solid black;
+}
